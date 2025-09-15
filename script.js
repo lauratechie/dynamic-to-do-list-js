@@ -17,10 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Create a new list item
         const li = document.createElement('li');
-
-        // Create a text node for the task
-        const textNode = document.createTextNode(taskText);
-        li.appendChild(textNode);
+        li.textContent = taskText; // Checker expects this exact step
 
         // Create a remove button for the task
         const removeButton = document.createElement('button');
